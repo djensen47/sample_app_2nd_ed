@@ -38,3 +38,8 @@ group :production do
   gem 'pg', '0.12.2'
   gem 'mysql2'
 end
+
+group :dotcloud do
+  # DotCloud does not provide a js runtime today - add one
+  gem 'therubyracer'
+end
