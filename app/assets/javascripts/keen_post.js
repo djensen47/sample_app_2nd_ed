@@ -1,12 +1,13 @@
 $(document).ready( function(){
-  $('#new_micropost').submit(function() {
-		Keen.addEvent("post");
+	Keen.addEvent("PageView",{page: document.title});
+  	$('#new_micropost').submit(function() {
+		Keen.addEvent("Microblog",{post:true});
 		console.log('keen post event tracked');
 		return;	
 	})
 	 
 	 $('#new_user').submit(function() {
-		Keen.addEvent("signup");
+		Keen.addEvent("Signups",{signup:true});
 		console.log('keen event tracked');
 		return;	
 	})
