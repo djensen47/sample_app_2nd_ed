@@ -28,9 +28,7 @@
     </div>
 
     <script>
-        CODEPUSH.enableFeature(
-            'sample',
-            'registration', {},
+        CODEPUSH.enableFeature( 'sample', 'registration', {},
             function(){
               $('.sign-up-unfeature').hide();
               $('.sign-up-feature').show();
@@ -38,6 +36,16 @@
               $('.sign-up-feature').hide();
               $('.sign-up-unfeature').show();
             });
+
+        CODEPUSH.enableFeature( 'sample', 'home-page-3-cols', {},
+            function(){
+              $('.3-cols-unfeature').hide();
+              $('.3-cols-feature').show();
+            }, function(){
+              $('.3-cols-feature').hide();
+              $('.3-cols-unfeature').show();
+            });
+
     </script>
 
   </body>
