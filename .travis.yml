@@ -17,3 +17,9 @@ notifications:
   email:
     recipients:
       - david@jensen47.com
+  webhooks:
+    urls:
+      - http://codepush-djensen47.dotcloud.com/ci-callback
+    on_success: always
+    on_failure: always
+    on_start: true
